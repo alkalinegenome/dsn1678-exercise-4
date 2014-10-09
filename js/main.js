@@ -5,7 +5,8 @@ var $dipper = $('.dipper');
 var $dipperSection = $('.dipper-section');
 var $shuttle = $('.shuttle');
 var $shuttleSection = $('.shuttle-section');
-
+var $ships = $('.ships img');
+var $shipsSection = $('.ships-section');
 
 $win.on('scroll', function () {
 	var scrollPos = $win.scrollTop();
@@ -22,6 +23,9 @@ $shuttleSection.waypoint(function () {
 	$shuttle.addClass('js-shuttle-launch');
 }, {offset: '50%'});
 
+$shipsSection.waypoint(function () {
+	$ships.addClass('js-ships-launch');
+}, {offset: '50%'});
 
 
 //offset helps determine how far down the waypoint goes down from the top.

@@ -75,7 +75,7 @@ will not reset itself after cycle completes*/
 	
 	100% {
 		opacity: 1;
-		transform: translateY (0px);
+		transform: translateY(0px);
 	}
 	
 }
@@ -83,8 +83,7 @@ will not reset itself after cycle completes*/
 .ships {
 	width: 100%;
 	opactiy: 0;
-	display: block;
-	margin: 0 auto;
+	text-align: center;
 }
 
 .ships li {
@@ -98,4 +97,23 @@ will not reset itself after cycle completes*/
 
 .ships-section {
 	background: transparent url("../img/kasei.jpg") no-repeat center top;
+}
+
+.js-ships-launch {
+	-webkit-animation: ships-launch 1s ease-out forwards;
+}
+
+@-webkit-keyframes ships-launch {
+	0% {
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		transform: translateY(0px);
+	}
 }
