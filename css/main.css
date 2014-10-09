@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 100%/1.5 Georgia,serif;
+	background-color: #c7c0ae;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 10rem 0;
+}
+
+.sun {
+	width: 300px;
+}
+
+.sun-section {
+	background: transparent url("../img/mars-pano.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+
+.dipper {
+	width: 300px;
+	opacity: 0;
+}
+
+/* add other webkit components 
+forwards ensures that animation remains at end frame
+will not reset itself after cycle completes*/
+
+.js-dipper-fade {
+	-webkit-animation: dipper-fade 1s linear forwards;
+}
+
+/* add other webkit components */
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+.dipper-section {
+	background-color: #D2B48C;
+}
+
+
+
+.shuttle {
+	width: 300px;
+	opacity: 0;
+}
+
+.shuttle-section {
+	background-color: #FFA500;
+}
+
+.js-shuttle-launch{
+	-webkit-animation: shuttle-launch 1s ease-out forwards;
+}
+
+@-webkit-keyframes shuttle-launch {
+	0% {
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY (0px);
+	}
+	
+}
+
+.ships {
+	width: 100%;
+	opactiy: 0;
+	display: block;
+	margin: 0 auto;
+}
+
+.ships li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.ships img {
+	width: 200px;
+}
+
+.ships-section {
+	background: transparent url("../img/kasei.jpg") no-repeat center top;
+}
