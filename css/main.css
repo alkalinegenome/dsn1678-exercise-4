@@ -117,7 +117,6 @@ will not reset itself after cycle completes*/
 	-webkit-animation-delay: 150ms
 }
 
-
 @-webkit-keyframes ships-launch {
 	0% {
 		opacity: 0;
