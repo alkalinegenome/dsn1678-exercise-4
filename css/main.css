@@ -105,6 +105,19 @@ will not reset itself after cycle completes*/
 	-webkit-animation: ships-launch 1s ease-out forwards;
 }
 
+.ships li:first-child img{
+	-webkit-animation-delay: 100ms
+}
+
+.ships li:nth-child(2) img{
+	-webkit-animation-delay: 250ms
+}
+
+.ships li:last-child img{
+	-webkit-animation-delay: 150ms
+}
+
+
 @-webkit-keyframes ships-launch {
 	0% {
 		opacity: 0;
@@ -116,6 +129,7 @@ will not reset itself after cycle completes*/
 	}
 	
 	100% {
+		opacity: 1;
 		transform: translateY(0px);
 	}
 }
