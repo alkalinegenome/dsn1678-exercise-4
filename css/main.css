@@ -93,10 +93,12 @@ will not reset itself after cycle completes*/
 
 .ships img {
 	width: 200px;
+	opacity: 0;
 }
 
 .ships-section {
 	background: transparent url("../img/kasei.jpg") no-repeat center top;
+	background-size: cover;
 }
 
 .js-ships-launch {
